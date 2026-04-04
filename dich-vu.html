@@ -33,11 +33,12 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Async Google Fonts - non-blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    <!-- Tailwind config + defer load -->
     <script>
-      tailwind.config = {
+      window._twConfig = {
         theme: {
           extend: {
             fontFamily: { sans: ['Inter', 'sans-serif'] },
@@ -62,8 +63,9 @@
             }
           }
         }
-      }
+      };
     </script>
+    <script src="https://cdn.tailwindcss.com" defer onload="if(window._twConfig)tailwind.config=window._twConfig"></script>
     <style>
       .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
       @media(max-width: 768px){ .sticky-contact { bottom: 20px !important; right: 15px !important; } }

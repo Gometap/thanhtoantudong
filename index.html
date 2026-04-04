@@ -34,11 +34,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Async Google Fonts - non-blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
     <link rel="preload" as="image" href="assets/img/banner_software_1775286317832.webp">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Store Tailwind config before defer load -->
     <script>
-      tailwind.config = {
+      window._twConfig = {
         theme: {
           extend: {
             fontFamily: { sans: ['Inter', 'sans-serif'] },
@@ -65,9 +67,11 @@
             }
           }
         }
-      }
+      };
     </script>
+    <script src="https://cdn.tailwindcss.com" defer onload="if(window._twConfig)tailwind.config=window._twConfig"></script>
     <style>
+
       .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
       .gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: linear-gradient(to right, #2563eb, #7c3aed); }
       .partner-logo { border: 1px solid rgba(0,0,0,0.1); padding: 12px 24px; border-radius: 12px; background: white; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
