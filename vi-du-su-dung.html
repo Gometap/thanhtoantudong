@@ -32,24 +32,41 @@
     <link rel="apple-touch-icon" href="assets/img/logo_950x950_no_text-02.webp">
 
 
-    <!-- Async Google Fonts - non-blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
-    <!-- Tailwind config + defer load -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      window._twConfig = {
+      tailwind.config = {
         theme: {
           extend: {
             fontFamily: { sans: ["Inter", "sans-serif"] },
             colors: {
-              brand: { 50: "#eff6ff", 100: "#dbeafe", 500: "#3b82f6", 600: "#2563eb", 700: "#1d4ed8", 900: "#1e3a8a" },
+              brand: {
+                50: "#eff6ff",
+                100: "#dbeafe",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                900: "#1e3a8a",
+              },
             },
             animation: { "ring-ring": "ring-ring 2s infinite" },
             keyframes: {
               "ring-ring": {
-                "0%": { transform: "scale(1)", boxShadow: "0 0 0 0 rgba(37, 99, 235, 0.7)" },
-                "70%": { transform: "scale(1.1)", boxShadow: "0 0 0 15px rgba(37, 99, 235, 0)" },
-                "100%": { transform: "scale(1)", boxShadow: "0 0 0 0 rgba(37, 99, 235, 0)" },
+                "0%": {
+                  transform: "scale(1)",
+                  boxShadow: "0 0 0 0 rgba(37, 99, 235, 0.7)",
+                },
+                "70%": {
+                  transform: "scale(1.1)",
+                  boxShadow: "0 0 0 15px rgba(37, 99, 235, 0)",
+                },
+                "100%": {
+                  transform: "scale(1)",
+                  boxShadow: "0 0 0 0 rgba(37, 99, 235, 0)",
+                },
               },
               shake: {
                 "0%, 100%": { transform: "translateX(0)" },
@@ -62,8 +79,6 @@
       };
       setTimeout(function(){document.documentElement.classList.add('tw-ready');},2500);
     </script>
-    <script src="https://cdn.tailwindcss.com" defer onload="document.documentElement.classList.add('tw-ready');if(window._twConfig)tailwind.config=window._twConfig"></script>
-
     <style>
       /* ===== ANTI-FOUC ===== */
       html:not(.tw-ready) body { visibility: hidden; }

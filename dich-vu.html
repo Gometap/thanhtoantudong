@@ -33,12 +33,11 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Async Google Fonts - non-blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
-    <!-- Tailwind config + defer load -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      window._twConfig = {
+      tailwind.config = {
         theme: {
           extend: {
             fontFamily: { sans: ['Inter', 'sans-serif'] },
@@ -63,10 +62,8 @@
             }
           }
         }
-      };
-      setTimeout(function(){document.documentElement.classList.add('tw-ready');},2500);
+      }
     </script>
-    <script src="https://cdn.tailwindcss.com" defer onload="document.documentElement.classList.add('tw-ready');if(window._twConfig)tailwind.config=window._twConfig"></script>
     <style>
       /* ===== ANTI-FOUC ===== */
       html:not(.tw-ready) body { visibility: hidden; }
