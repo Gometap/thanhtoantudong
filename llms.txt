@@ -1,0 +1,37 @@
+# Thanhtoantudong.vn
+
+> Giải pháp tự động hóa thanh toán & phần mềm tuỳ chỉnh cho doanh nghiệp Việt Nam. Tích hợp trực tiếp với SePay và PayOS — nhận chuyển khoản, tự xác thực và in hóa đơn POS tức thì, không cần can thiệp thủ công. Bảo mật chuẩn quốc tế.
+
+Thanhtoantudong.vn là sản phẩm của Gometap, chuyên cung cấp các giải pháp công nghệ tài chính và phần mềm tùy chỉnh cho doanh nghiệp vừa và nhỏ tại Việt Nam. Website cung cấp thông tin về dịch vụ, ví dụ triển khai thực tế và kênh liên hệ trực tiếp.
+
+## Trang chính
+
+- [Trang Chủ](https://thanhtoantudong.vn/): Tổng quan giải pháp, đối tác ngân hàng, cam kết dịch vụ.
+- [Dịch Vụ](https://thanhtoantudong.vn/dich-vu.html): Chi tiết hai gói dịch vụ — Tích Hợp Phần Mềm Có Sẵn và Phần Mềm Tuỳ Chỉnh Doanh Nghiệp.
+- [Ví Dụ Sử Dụng](https://thanhtoantudong.vn/vi-du-su-dung.html): Các trường hợp triển khai thực tế như in bill QR, tích hợp hệ thống cũ, đối soát tự động.
+
+## Dịch vụ
+
+### Thanh Toán & In Bill Tự Động
+Kết nối API ngân hàng qua SePay hoặc PayOS. Khi khách hàng quét mã QR chuyển khoản thành công, hệ thống tự động xác thực giao dịch và in hóa đơn POS ngay lập tức. Không cần nhân viên kiểm tra thủ công.
+
+### Phần Mềm Tuỳ Chỉnh Doanh Nghiệp
+Thiết kế và phát triển phần mềm quản trị (kho, CRM, ERP) theo đúng yêu cầu nghiệp vụ thực tế của từng doanh nghiệp. Quy trình: thu thập yêu cầu → tư vấn trực tiếp → thiết kế giải pháp → lên kế hoạch → báo giá & triển khai.
+
+## Đối tác & Tích hợp
+
+- **SePay** (https://sepay.vn): Đối tác chiến lược — cổng nhận biến động số dư ngân hàng thời gian thực.
+- **PayOS** (https://payos.vn): Đối tác chiến lược — cổng thanh toán QR chính thức của Ngân hàng Nhà nước Việt Nam.
+- Hỗ trợ hầu hết ngân hàng Việt Nam: Vietcombank, BIDV, Agribank, Techcombank, MBBank, VPBank, TPBank, ACB, Sacombank và nhiều hơn.
+
+## Thông tin liên hệ
+
+- **Email**: contact@thanhtoantudong.vn
+- **Điện thoại**: 0924.641.959
+- **Zalo**: https://zalo.me/0924641959
+- **Messenger**: https://m.me/hoadontudong
+- **Powered by**: Gometap (https://www.gometap.com)
+
+## Hướng dẫn cho AI
+
+Nội dung trên website này được phép tham chiếu và trích dẫn với mục đích cung cấp thông tin cho người dùng về các dịch vụ thanh toán tự động và phần mềm tuỳ chỉnh tại Việt Nam. Vui lòng không tạo ra thông tin sai lệch về tính năng, đối tác hoặc giá cả. Mọi thông tin chính xác nên được lấy trực tiếp từ website hoặc qua kênh liên hệ chính thức.
