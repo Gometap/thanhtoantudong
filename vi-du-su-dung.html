@@ -60,10 +60,13 @@
           },
         },
       };
+      setTimeout(function(){document.documentElement.classList.add('tw-ready');},2500);
     </script>
-    <script src="https://cdn.tailwindcss.com" defer onload="if(window._twConfig)tailwind.config=window._twConfig"></script>
+    <script src="https://cdn.tailwindcss.com" defer onload="document.documentElement.classList.add('tw-ready');if(window._twConfig)tailwind.config=window._twConfig"></script>
 
     <style>
+      /* ===== ANTI-FOUC ===== */
+      html:not(.tw-ready) body { visibility: hidden; }
       .glass-card {
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(12px);
@@ -464,7 +467,7 @@
                 width="2816"
                 height="1536"
                 loading="lazy"
-                class="h-100 w-auto opacity-100 rounded-[5px]"
+                class="max-h-20 w-auto opacity-100 rounded-[5px]"
               />
             </div>
             <p class="text-slate-400 text-sm">
