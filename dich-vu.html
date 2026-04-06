@@ -35,38 +35,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: { sans: ['Inter', 'sans-serif'] },
-            colors: {
-              brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' }
-            },
-            animation: { 
-                'ring-ring': 'ring-ring 2s infinite',
-                'shake': 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both'
-            },
-            keyframes: {
-              'ring-ring': {
-                '0%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(37, 99, 235, 0.7)' },
-                '70%': { transform: 'scale(1.1)', boxShadow: '0 0 0 15px rgba(37, 99, 235, 0)' },
-                '100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(37, 99, 235, 0)' }
-              },
-              'shake': {
-                '0%, 100%': { transform: 'translateX(0)' },
-                '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-2px)' },
-                '20%, 40%, 60%, 80%': { transform: 'translateX(2px)' }
-              }
-            }
-          }
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
     <style>
-      /* ===== ANTI-FOUC ===== */
-      html:not(.tw-ready) body { visibility: hidden; }
       .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
       @media(max-width: 768px){ .sticky-contact { bottom: 20px !important; right: 15px !important; } }
       
@@ -240,7 +210,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <div class="col-span-1">
                     <div class="flex items-center gap-2 mb-4 p-2 rounded-[5px] inline-block">
-                        <img src="assets/img/logo_2816 × 1536.webp" alt="Thanhtoantudong.vn" width="2816" height="1536" loading="lazy" class="max-h-20 w-auto opacity-100 rounded-[5px]">
+                        <img src="assets/img/logo_2816x1536.webp" alt="Thanhtoantudong.vn" width="2816" height="1536" loading="lazy" class="max-h-20 w-auto opacity-100 rounded-[5px]">
                     </div>
                     <p class="text-slate-400 text-sm">Chuyên cung cấp giải pháp lập trình phần mềm sáng tạo, tự động hóa thanh toán, rút ngắn thời gian vận hành cho doanh nghiệp. Đối tác tin cậy của SePay & PayOS.</p>
                 </div>
